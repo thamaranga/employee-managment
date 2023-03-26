@@ -14,6 +14,7 @@ public class EmployeeUserDetails implements UserDetails {
 
     private String username;
     private String password;
+    //This means list of roles
     private List<GrantedAuthority> authorityList;
 
     public EmployeeUserDetails(Employee employee){
