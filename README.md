@@ -1,5 +1,5 @@
 This application demonstrates how to implement spring boot
-basic authentication/authorization.
+basic authentication/authorization using username and password.
 
 Here we have implemented username/password based authentication.
 
