@@ -3,6 +3,7 @@ package com.hasitha.employeemanagment.config;
 import com.hasitha.employeemanagment.service.EmployeeUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -64,6 +65,6 @@ public class SecurityConfigUpdated {
                 .authenticated().and().
                 httpBasic().and().build();*/
 
-        return http.csrf().disable().authorizeRequests().antMatchers("/employee/welcome", "/employee/create").permitAll().and().authorizeRequests().antMatchers("/employee/*").authenticated().and().httpBasic().and().build();
+        return http.csrf(csrf->csrf.disable()).authorizeRequests(authz->authz.requestMatchers("/employee/welcome", "/employee/create").permitAll().requestMatchers("/employee/*").authenticated().anyRequest().authenticated()).httpBasic(Customizer.withDefaults()).build();
     }
 }

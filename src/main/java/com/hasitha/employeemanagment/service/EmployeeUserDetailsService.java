@@ -1,5 +1,6 @@
 package com.hasitha.employeemanagment.service;
 
+import com.hasitha.employeemanagment.dto.EmployeeUserDetails;
 import com.hasitha.employeemanagment.entity.Employee;
 import com.hasitha.employeemanagment.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;

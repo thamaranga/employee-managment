@@ -6,25 +6,15 @@ Here we have implemented username/password based authentication.
 For testing purpose I can use below user credentials.
 (I have already added below user details into employee db)
 
+Below test records can be inserted into local Db for testing.
+
+ROLE_MANAGER
 {
-
-"userName":"thamaranga",
-"password":"789123"
-
+"userName":"hasithat", "password":"12345"
 }
 
-
+ROLE_HR
 {
-
-"userName":"prakash",
-"password":"787878"
-
-}
-
-{
-
-"userName":"hong",
-"password":"121212"
-
+"userName":"thamaranga","password":"12345"
 }
 

@@ -1,4 +1,4 @@
-package com.hasitha.employeemanagment.service;
+package com.hasitha.employeemanagment.dto;
 
 import com.hasitha.employeemanagment.entity.Employee;
 import org.springframework.security.core.GrantedAuthority;
